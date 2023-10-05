@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(webfont/Lunasima-Regular.ttf);
+}
+
+* {
+    font-family: 'MyFont';
+}
+
+body {
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main {
+    background-color: #cfbdaf;
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    background-color: #2f294f;
+    color: #cfbdaf;
+    font-weight: bold;
+}
+
+a {
+    color: #cfbdaf;
+    text-decoration: none;
+}
+
+a:hover,
+a:visited {
+    color: #cfbdaf;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+header {
+    background-color: #2f294f;
+    text-align: center;
+}
+
+h1 {
+    color: #cfbdaf;
+    font-size: 50px;
+}
+
+h2 {
+    color: #2f294f;
+    font-size: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    gap: 6px;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    color: #2f294f;
+    border: 2px solid #2f294f;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.square:hover {
+    cursor: pointer;
+    background-color: #2f294f5f;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    padding: 20px;
+}
+
+button {
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #2f294f;
+    background-color: #cfbdaf;
+    color: #2f294f;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2f294f;
+    border: 2px solid #2f294f;
+    color: #cfbdaf;
+}
